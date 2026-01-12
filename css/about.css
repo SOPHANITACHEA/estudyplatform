@@ -1,0 +1,25 @@
+.about-img {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: cover;
+}
+
+.about-text {
+  font-size: 1.29rem;
+  line-height: 1.7;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.section-title h1 {
+  font-size: 3rem;
+}
+
+ul.about-text li {
+  font-size: 0.89rem;
+  margin-bottom: 0.1rem;
+}

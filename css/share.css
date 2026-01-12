@@ -1,0 +1,183 @@
+/* ===== Reset & Base ===== */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 30px;
+  }
+  
+  /* ===== Layout Wrappers ===== */
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .header-section {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  
+  .header-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .header-section h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .header-section p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-top: 0;
+  }
+  
+  /* ===== Plans Grid ===== */
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 290px);
+    justify-content: center;
+    gap: 100px 130px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: calc(3 * 290px + 2 * 60px);
+  }
+  
+  /* ===== Plan Card ===== */
+  .plan-card {
+    width: 380px;
+    min-height: 450px;
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+    border-top: 5px solid #d70654;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .highlight-green {
+    border-top-color: #a0c878;
+  }
+  
+  /* ===== Icon ===== */
+  .icon-wrapper {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 7px rgba(0,123,255,0.5);
+    z-index: 10;
+  }
+  
+  /* ===== Text & Price ===== */
+  .plan-title {
+    margin-top: 35px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .plan-subtitle {
+    color: #4caf50;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0 0 18px 0;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .price-tag {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  
+  .price-tag .currency {
+    font-size: 1.3rem;
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+  
+  .price-tag .period {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #444;
+    vertical-align: middle;
+    margin-left: 3px;
+  }
+  
+  /* ===== Features List ===== */
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .plan-features li {
+    margin: 6px 0;
+    padding-bottom: 7px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .plan-features li:nth-last-child(-n+5) {
+    border-bottom: none;
+  }
+  
+  .plan-features li i {
+    color: #007bff;
+    margin-right: 10px;
+    min-width: 18px;
+    text-align: center;
+  }
+  
+  /* ===== Button ===== */
+  .btn-action {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #27d541;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-action:hover {
+    background-color: #0056b3;
+  }
+  
